@@ -21,5 +21,4 @@ async def on_ready():
 
 def Start():
     logger.info(f"Starting cardboard companion with token {cfg.values.token}")
-    register(bot, cfg.values.guild_id)
     bot.run(cfg.values.token)
